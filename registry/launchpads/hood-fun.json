@@ -23,6 +23,6 @@
     "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/",
     "https://hood.fun/api/board"
   ],
-  "notes": "Bitquery's Robinhood Chain launch docs name the first address as hood.fun's current launch contract and the second as the previous generation; hood.fun's public board API names both as the launchpad of tokens it lists.",
+  "notes": "Bitquery's Robinhood Chain launch docs name the first address as hood.fun's current launch contract and the second as the previous generation; hood.fun's public board API names both as the launchpad of tokens it lists. HEY Research Lab's public factory list reads the first as the launchpad of hood.fun's community launches and records a third, main launch contract that no public page names yet, so it is not listed here.",
   "addedAt": "2026-10-02"
 }
