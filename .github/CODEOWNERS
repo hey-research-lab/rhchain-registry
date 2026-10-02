@@ -1,6 +1,5 @@
-# Placeholder: replace with the hey-research-lab team that reviews registry changes once it
-# exists (for example @hey-research-lab/registry-maintainers). Every change to registry/ needs
-# an owner's review.
-* @hey-research-lab/maintainers
-/registry/ @hey-research-lab/maintainers
-/schema/ @hey-research-lab/maintainers
+# hey-research-lab is a user account, so ownership is the account itself (no teams). Every
+# change to registry/ and schema/ needs an owner's review.
+* @hey-research-lab
+/registry/ @hey-research-lab
+/schema/ @hey-research-lab
