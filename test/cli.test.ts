@@ -96,6 +96,6 @@ describe('rhchain-registry CLI', () => {
     expect((await cli(['--help'])).code).toBe(0);
     const version = await cli(['--version']);
     expect(version.code).toBe(0);
-    expect(version.stdout.trim()).toBe('0.1.0');
+    expect(version.stdout.trim()).toBe('0.1.1');
   });
 });

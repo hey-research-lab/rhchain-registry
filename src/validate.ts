@@ -16,7 +16,7 @@ import {
   type RegistryEntryInput,
   TYPES_WITHOUT_CONTRACTS,
 } from './schema.js';
-import { findForbiddenWording, hasUnsafeText } from './text.js';
+import { findAllForbiddenWording, hasUnsafeText } from './text.js';
 import { checkStoredUrl } from './url.js';
 
 /** One file of the registry tree, path relative to the registry root with `/` separators. */
@@ -160,13 +160,14 @@ function checkText(
     );
   }
   if (wording) {
-    const found = findForbiddenWording(value);
-    if (found !== null) {
+    const found = findAllForbiddenWording(value);
+    if (found.length > 0) {
+      const words = found.map((word) => `"${word}"`).join(', ');
       out.push(
         issue(
           'forbidden_wording',
           file,
-          `"${found}" is not registry wording: entries state public facts, never a verdict, endorsement, advice or a verification claim.`,
+          `${words} ${found.length === 1 ? 'is' : 'are'} not registry wording: entries state public facts, never a verdict, endorsement, advice or a verification claim.`,
           pointer,
         ),
       );

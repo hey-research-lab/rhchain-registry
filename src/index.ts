@@ -25,7 +25,12 @@ export {
 } from './validate.js';
 export { buildArtifacts, serializeArtifacts, type BuildArtifacts } from './build.js';
 export { checkAuthoredUrl, checkStoredUrl, type UrlCheck } from './url.js';
-export { FORBIDDEN_WORDING, findForbiddenWording, hasUnsafeText } from './text.js';
+export {
+  FORBIDDEN_WORDING,
+  findAllForbiddenWording,
+  findForbiddenWording,
+  hasUnsafeText,
+} from './text.js';
 
 const byId = new Map<string, RegistryEntry>(registry.entries.map((entry) => [entry.id, entry]));
 const byAddress = new Map<string, { entry: RegistryEntry; contract: RegistryContract }>();

@@ -344,6 +344,21 @@ describe('validateRegistryFiles — text and dates', () => {
     expect(one({ notes: 'Sourcify holds a verified source for it.' })).toEqual([]);
   });
 
+  it('names every forbidden phrase in a field in one run', () => {
+    const result = validateRegistryFiles(
+      [
+        file(
+          'launchpads/example-launchpad.json',
+          baseEntry({ notes: 'Audited, safe and trusted. Safe!' }),
+        ),
+      ],
+      { today: TODAY },
+    );
+    const wording = result.issues.filter((found) => found.code === 'forbidden_wording');
+    expect(wording).toHaveLength(1);
+    expect(wording[0]?.message).toMatch(/^"audited", "safe", "trusted" are not registry wording/);
+  });
+
   it('refuses impossible and future dates', () => {
     expect(one({ addedAt: '2026-02-30' })).toEqual(['invalid_date']);
     expect(one({ addedAt: '2026-10-03' })).toEqual(['date_in_future']);

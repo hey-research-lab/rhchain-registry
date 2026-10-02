@@ -57,3 +57,14 @@ export const findForbiddenWording = (value: string): string | null => {
   const match = FORBIDDEN_RE.exec(value);
   return match?.[1]?.toLowerCase() ?? null;
 };
+
+const FORBIDDEN_RE_ALL = new RegExp(FORBIDDEN_RE.source, 'gi');
+
+/** Every distinct forbidden phrase in `value`, in order of first appearance (so one run reports them all). */
+export const findAllForbiddenWording = (value: string): string[] => {
+  const found = new Set<string>();
+  for (const match of value.matchAll(FORBIDDEN_RE_ALL)) {
+    if (match[1] !== undefined) found.add(match[1].toLowerCase());
+  }
+  return [...found];
+};
