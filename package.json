@@ -1,7 +1,7 @@
 {
   "name": "@hey-research-lab/rhchain-registry",
   "version": "0.1.0",
-  "description": "A community-maintained, CI-validated registry of Robinhood Chain infrastructure (factories, DEXes, launchpads, bridges, oracles, explorers, lockers) with public sources for every entry.",
+  "description": "A community-maintained, CI-validated registry of Robinhood Chain infrastructure (DEXes, factories, launchpads, protocols, explorers, RPC) with public sources for every entry.",
   "license": "MIT",
   "author": "HEY Research Lab",
   "type": "module",
