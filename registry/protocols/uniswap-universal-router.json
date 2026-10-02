@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "uniswap-universal-router",
+  "name": "Uniswap Universal Router",
+  "type": "protocol",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x8876789976dEcBfCbBbe364623C63652db8C0904",
+      "role": "router",
+      "name": "UniversalRouter"
+    },
+    {
+      "address": "0x204FAca1764B154221e35c0d20aBb3c525710498",
+      "role": "router",
+      "name": "UniversalRouter",
+      "version": "2.1.2"
+    }
+  ],
+  "website": "https://app.uniswap.org/",
+  "docs": "https://developers.uniswap.org/docs/protocols/v4/deployments",
+  "sources": [
+    "https://developers.uniswap.org/docs/protocols/v4/deployments",
+    "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments"
+  ],
+  "notes": "Both addresses appear in the Robinhood Chain section of Uniswap's v4 deployments page; the first also appears on the v3 page.",
+  "addedAt": "2026-10-02"
+}

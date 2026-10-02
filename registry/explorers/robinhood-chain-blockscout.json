@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "robinhood-chain-blockscout",
+  "name": "Robinhood Chain explorer (Blockscout)",
+  "type": "explorer",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [],
+  "website": "https://robinhoodchain.blockscout.com/",
+  "docs": "https://docs.robinhood.com/chain/connecting/",
+  "sources": [
+    "https://docs.robinhood.com/chain/connecting/"
+  ],
+  "notes": "The block explorer Robinhood's chain documentation lists for mainnet (chain id 4663).",
+  "addedAt": "2026-10-02"
+}

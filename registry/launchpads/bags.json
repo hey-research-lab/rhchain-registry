@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "bags",
+  "name": "Bags",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0xe8Cc4431adF8b5A847C113EF0c6af9043219Cb37",
+      "role": "launch-factory",
+      "name": "BagsFactory"
+    }
+  ],
+  "website": "https://bags.fm/",
+  "docs": "https://docs.bags.fm/robinhood/overview",
+  "sources": [
+    "https://docs.bags.fm/robinhood/overview",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "Bags' Robinhood Chain docs list this address as BagsFactory.",
+  "addedAt": "2026-10-02"
+}

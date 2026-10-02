@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "hood-fun",
+  "name": "hood.fun",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x5Fcc1DF0dC020CF454e742E9a8Ae2554C37A452C",
+      "role": "launch-factory",
+      "name": "hood.fun launchpad"
+    },
+    {
+      "address": "0x6a63D96ef77AE569fCb85934Cf1Bd1Ec7FE9B33D",
+      "role": "launch-factory",
+      "name": "hood.fun launchpad",
+      "version": "previous"
+    }
+  ],
+  "website": "https://hood.fun/",
+  "sources": [
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/",
+    "https://hood.fun/api/board"
+  ],
+  "notes": "Bitquery's Robinhood Chain launch docs name the first address as hood.fun's current launch contract and the second as the previous generation; hood.fun's public board API names both as the launchpad of tokens it lists.",
+  "addedAt": "2026-10-02"
+}

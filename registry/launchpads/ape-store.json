@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "ape-store",
+  "name": "ape.store",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x6e4910ea5A04376032F6564da9a9E4E88B7a87C1",
+      "role": "launch-factory",
+      "name": "ape.store launcher"
+    }
+  ],
+  "website": "https://ape.store/",
+  "sources": [
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "Bitquery's Robinhood Chain launch docs name this address for Ape.store.",
+  "addedAt": "2026-10-02"
+}

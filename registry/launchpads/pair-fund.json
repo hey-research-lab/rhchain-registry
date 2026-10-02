@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "pair-fund",
+  "name": "PAIR",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x8660A7F019C7943b0b0A91B8E39AFf3b6DB6Ae62",
+      "role": "launch-factory",
+      "name": "PAIR launcher"
+    }
+  ],
+  "website": "https://pair.fund/",
+  "sources": [
+    "https://pair.fund/"
+  ],
+  "notes": "The launcher address ships in the pair.fund web app JavaScript.",
+  "addedAt": "2026-10-02"
+}

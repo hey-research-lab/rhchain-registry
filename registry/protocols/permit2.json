@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "permit2",
+  "name": "Permit2",
+  "type": "protocol",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+      "role": "permit",
+      "name": "Permit2"
+    }
+  ],
+  "docs": "https://github.com/Uniswap/permit2",
+  "sources": [
+    "https://developers.uniswap.org/docs/protocols/v4/deployments",
+    "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments"
+  ],
+  "notes": "Uniswap's token-approval contract, at its canonical address. Listed for Robinhood Chain on Uniswap's v3 and v4 deployments pages.",
+  "addedAt": "2026-10-02"
+}

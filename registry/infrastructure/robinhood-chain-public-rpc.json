@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "robinhood-chain-public-rpc",
+  "name": "Robinhood Chain public RPC",
+  "type": "infrastructure",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [],
+  "docs": "https://docs.robinhood.com/chain/connecting/",
+  "sources": [
+    "https://docs.robinhood.com/chain/connecting/"
+  ],
+  "notes": "Mainnet JSON-RPC endpoint https://rpc.mainnet.chain.robinhood.com, as Robinhood's chain documentation lists it. The documentation describes the public endpoints as rate-limited and not recommended for production use.",
+  "addedAt": "2026-10-02"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "doppler",
+  "name": "Doppler",
+  "type": "protocol",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0xeb7C034704eF8Dcd2D32324c1545f62fB4aD0862",
+      "role": "launch-factory",
+      "name": "Airlock"
+    }
+  ],
+  "docs": "https://docs.doppler.lol/",
+  "sources": [
+    "https://docs.doppler.lol/reference/contract-addresses",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "Doppler's contract-addresses page lists the Airlock with a Robinhood Chain explorer link. Doppler is a token-launch protocol that several front-ends call; a token created through the Airlock does not say which front-end launched it.",
+  "addedAt": "2026-10-02"
+}

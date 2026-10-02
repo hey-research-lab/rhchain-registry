@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "clanker",
+  "name": "Clanker",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0xD3f2cC1731b7Fd17f28798835C2E02f0a1839A94",
+      "role": "launch-factory",
+      "name": "Clanker factory",
+      "version": "v4"
+    }
+  ],
+  "website": "https://www.clanker.world/",
+  "sources": [
+    "https://www.clanker.world/",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "The factory ships in the clanker.world web app JavaScript, and Bitquery's Robinhood Chain launch docs name it for Clanker.",
+  "addedAt": "2026-10-02"
+}

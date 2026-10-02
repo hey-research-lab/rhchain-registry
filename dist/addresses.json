@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "chainId": 4663,
+  "addresses": {
+    "0x000000000022d473030f116ddee9f6b43ac78ba3": {
+      "id": "permit2",
+      "type": "protocol",
+      "role": "permit",
+      "name": "Permit2"
+    },
+    "0x000000001f26a0044baa66024e7b6599c61963f8": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "auction-factory",
+      "name": "ContinuousClearingAuctionFactory"
+    },
+    "0x0000001b173c3bbf3984d417d8614e3eed34865b": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "lens",
+      "name": "ReservesLens"
+    },
+    "0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "launch-factory",
+      "name": "LiquidityLauncher"
+    },
+    "0x00cca200bf124dbfa848937c553864f4b4ce0632": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "auction-factory",
+      "name": "ContinuousClearingAuctionFactory"
+    },
+    "0x0889b4cbbb5a8ca2a722734c147fd5a8d956d863": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0x0a122717bc36e3c7a7958128a5c789e0b070b3ae": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "strategy",
+      "name": "UniversalRouterStrategy"
+    },
+    "0x0c37a24f5d23a486fa692d1500881d698b1f77a4": {
+      "id": "pons",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Pons factory"
+    },
+    "0x108eb6d67c079beb1ef328850a88c2bbdb4617ea": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0x16cf6788b762ee8969744586ed16fc5705140dd7": {
+      "id": "klik",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Klik launcher"
+    },
+    "0x1f7d7550b1b028f7571e69a784071f0205fd2efa": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "factory",
+      "name": "UniswapV3Factory"
+    },
+    "0x204faca1764b154221e35c0d20abb3c525710498": {
+      "id": "uniswap-universal-router",
+      "type": "protocol",
+      "role": "router",
+      "name": "UniversalRouter"
+    },
+    "0x2110f111d2776ef53366b9eaef8c5619fde09eef": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "LEGACY_REFLECTION_FACTORY"
+    },
+    "0x22e99278308b393ea1260859b181ad7e78f5eeed": {
+      "id": "long-xyz",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "LongLauncher"
+    },
+    "0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": {
+      "id": "flap",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Flap launcher"
+    },
+    "0x282a3c4d320cc7f0d5eaf56b8029e4b88338f0a3": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "multicall",
+      "name": "UniswapInterfaceMulticall"
+    },
+    "0x2a9d79b28d506b209511792795a182e726975c76": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "REFLECTION_PAIR_FACTORY"
+    },
+    "0x2e9d45bb7b30549f5216813ada9a6b7982c5b3ed": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "library",
+      "name": "NFTDescriptor"
+    },
+    "0x33e885ed0ec9bf04ecfb19341582aadcb4c8a9e7": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "quoter",
+      "name": "QuoterV2"
+    },
+    "0x346c46cf7d8dfed2c614c38570c697ac948feeec": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "INSTANT_GOLD_FACTORY"
+    },
+    "0x45e213f086d721ac8baacf6875940a278399c994": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "direct-pool factory"
+    },
+    "0x4fb5057634f3cae0b400e753852ea12b5d6278e2": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0x511cf20f3c794bdf95be18d93a0f1539919ba8fa": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0x52afebdb95cda3c221eb415abb9cee051e3ca082": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "direct-pool factory"
+    },
+    "0x58daec3116aae6d93017baaea7749052e8a04fa7": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "position-manager",
+      "name": "PositionManager"
+    },
+    "0x5bd1fbe78a78fe8236fa00cf48fbeba74ae34661": {
+      "id": "letscash",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "LAUNCHPAD_FACTORY"
+    },
+    "0x5cf8e499c7c466c7e2cf127bdf129f57151e65dc": {
+      "id": "flaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "FlaunchPositionManager"
+    },
+    "0x5fcc1df0dc020cf454e742e9a8ae2554c37a452c": {
+      "id": "hood-fun",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "hood.fun launchpad"
+    },
+    "0x62b33a039d289cbda50ebeb72fe4261449e61bcf": {
+      "id": "launchhood",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "LaunchHoodV3Factory"
+    },
+    "0x6a63d96ef77ae569fcb85934cf1bd1ec7fe9b33d": {
+      "id": "hood-fun",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "hood.fun launchpad"
+    },
+    "0x6bfab86122842eb6e8602124dcebf6a373498ffc": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "INSTANT_ROBIN_FACTORY"
+    },
+    "0x6ce85c4b7ce12903e5867652c265bccce57f935f": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "REFLECTION_FACTORY"
+    },
+    "0x6e4910ea5a04376032f6564da9a9e4e88b7a87c1": {
+      "id": "ape-store",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "ape.store launcher"
+    },
+    "0x6f84dae9c064ff453e5c8af51efb819f8f610225": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "position-descriptor",
+      "name": "NonfungibleTokenPositionDescriptor"
+    },
+    "0x700da3295617ec0c856cf303f77145298c1d4994": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0x73991a25c818bf1f1128deaab1492d45638de0d3": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "position-manager",
+      "name": "NonfungiblePositionManager"
+    },
+    "0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d": {
+      "id": "trench-today",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "trench.today launcher"
+    },
+    "0x7c48dde3b447381f4d986334679b3afc7f2d35c2": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "strategy",
+      "name": "InstantLaunchStrategy (creator fees)"
+    },
+    "0x7dfd4f31be6814d2906bde155c3e1b146eac1468": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "lens",
+      "name": "TickLens"
+    },
+    "0x7e1eabd52ae29598e6483f72dcf1a70b14284db8": {
+      "id": "pons",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Pons factory"
+    },
+    "0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": {
+      "id": "pons",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Pons factory"
+    },
+    "0x8366a39cc670b4001a1121b8f6a443a643e40951": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "pool-manager",
+      "name": "PoolManager"
+    },
+    "0x8660a7f019c7943b0b0a91b8e39aff3b6db6ae62": {
+      "id": "pair-fund",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "PAIR launcher"
+    },
+    "0x8876789976decbfcbbbe364623c63652db8c0904": {
+      "id": "uniswap-universal-router",
+      "type": "protocol",
+      "role": "router",
+      "name": "UniversalRouter"
+    },
+    "0x89e5db8b5aa49aa85ac63f691524311aeb649eba": {
+      "id": "uniswap-v2",
+      "type": "dex",
+      "role": "router",
+      "name": "UniswapV2Router02"
+    },
+    "0x8bceaa40b9acdfaedf85adf4ff01f5ad6517937f": {
+      "id": "uniswap-v2",
+      "type": "dex",
+      "role": "factory",
+      "name": "UniswapV2Factory"
+    },
+    "0x8dc178efb8111bb0973dd9d722ebeff267c98f94": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "quoter",
+      "name": "V4Quoter"
+    },
+    "0x9639443158e8c5efa35bd45287bf2effd3d8dc06": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "position-descriptor",
+      "name": "PositionDescriptor"
+    },
+    "0x9f1a2556015c29d8853a6289afa840359abac6ff": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "boost factory"
+    },
+    "0xa4552a787ea97649568adcf82e258b714d8affd4": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0xa5aab3f0c6eeadf30ef1d3eb997108e976351feb": {
+      "id": "pons",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Pons factory"
+    },
+    "0xaa9dcd9e246b710723ebe8d3ee947ff04a29c3d1": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0xaf9f3ce1d34909f59e88c23027f89d5807b0f915": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "LEGACY_FACTORY"
+    },
+    "0xb28c17b72538741590a3374127f84f79b59bbf30": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0xb6eb41b28bd96461d9a97954920823a8b7042af0": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "bonding factory"
+    },
+    "0xb76bd3a49e46399df323dc06bebcee2dbd346230": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "direct-pool factory"
+    },
+    "0xbf1ab81f7d534b2cc0da76fcf4d541322bb0e000": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "strategy",
+      "name": "LBPStrategy"
+    },
+    "0xc9566675b1ea42861546f3c5b74ace2c79c49572": {
+      "id": "uniswap-liquidity-launcher",
+      "type": "factory",
+      "role": "strategy",
+      "name": "InstantLaunchStrategy (no creator fees)"
+    },
+    "0xcaf681a66d020601342297493863e78c959e5cb2": {
+      "id": "uniswap-v3",
+      "type": "dex",
+      "role": "router",
+      "name": "SwapRouter02"
+    },
+    "0xd3f2cc1731b7fd17f28798835c2e02f0a1839a94": {
+      "id": "clanker",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Clanker factory"
+    },
+    "0xd7601cee401306fdea5833c6898181d9c770f800": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "INSTANT_FACTORY"
+    },
+    "0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": {
+      "id": "bags",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "BagsFactory"
+    },
+    "0xeb3feed2716cf0eeada05b22e67424794e1f5a80": {
+      "id": "robinpad",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "FACTORY"
+    },
+    "0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": {
+      "id": "doppler",
+      "type": "protocol",
+      "role": "launch-factory",
+      "name": "Airlock"
+    },
+    "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b": {
+      "id": "uniswap-v4",
+      "type": "dex",
+      "role": "lens",
+      "name": "StateView"
+    },
+    "0xf3b3e2a751f5891b42b31b0c0044ee90bb2fe079": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "direct-pool factory"
+    },
+    "0xf4fc0cd27fc8ecf17e55ee4c3f7201897df3eb75": {
+      "id": "pons",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "Pons factory"
+    },
+    "0xfe9868fb08d4af99f37c83839f87183b6ea1783a": {
+      "id": "robinlaunch",
+      "type": "launchpad",
+      "role": "launch-factory",
+      "name": "direct-pool factory"
+    }
+  }
+}

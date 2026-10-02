@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "uniswap-v3",
+  "name": "Uniswap v3",
+  "type": "dex",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x1f7d7550B1b028f7571E69A784071F0205FD2EfA",
+      "role": "factory",
+      "name": "UniswapV3Factory"
+    },
+    {
+      "address": "0x73991a25C818Bf1f1128dEAaB1492D45638DE0D3",
+      "role": "position-manager",
+      "name": "NonfungiblePositionManager"
+    },
+    {
+      "address": "0x6F84dAE9c064ff453E5C8af51EfB819f8f610225",
+      "role": "position-descriptor",
+      "name": "NonfungibleTokenPositionDescriptor"
+    },
+    {
+      "address": "0x2E9D45Bb7b30549F5216813aDA9a6b7982C5B3ED",
+      "role": "library",
+      "name": "NFTDescriptor"
+    },
+    {
+      "address": "0xCaf681a66D020601342297493863E78C959E5cb2",
+      "role": "router",
+      "name": "SwapRouter02"
+    },
+    {
+      "address": "0x33e885eD0Ec9bF04EcfB19341582aADCb4c8A9E7",
+      "role": "quoter",
+      "name": "QuoterV2"
+    },
+    {
+      "address": "0x7DfD4F31be6814D2906BDE155c3e1B146EAc1468",
+      "role": "lens",
+      "name": "TickLens"
+    },
+    {
+      "address": "0x282A3C4D320Cc7f0d5eaf56B8029e4B88338f0a3",
+      "role": "multicall",
+      "name": "UniswapInterfaceMulticall"
+    }
+  ],
+  "website": "https://app.uniswap.org/",
+  "docs": "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments",
+  "sources": [
+    "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments"
+  ],
+  "notes": "Addresses from Uniswap's Robinhood Chain v3 deployments page (v3-core 1.0.0, v3-periphery 1.0.0, swap-router-contracts 1.1.0). Universal Router and Permit2, listed on the same page, have entries of their own.",
+  "addedAt": "2026-10-02"
+}

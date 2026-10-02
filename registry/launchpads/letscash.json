@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "letscash",
+  "name": "letscash.fun",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x5bd1Fbe78a78fe8236fa00CF48fbEBA74ae34661",
+      "role": "launch-factory",
+      "name": "LAUNCHPAD_FACTORY"
+    }
+  ],
+  "website": "https://letscash.fun/",
+  "sources": [
+    "https://letscash.fun/"
+  ],
+  "notes": "The letscash.fun web app JavaScript names this address as its launchpad factory.",
+  "addedAt": "2026-10-02"
+}

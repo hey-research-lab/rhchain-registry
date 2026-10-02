@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "uniswap-v2",
+  "name": "Uniswap v2",
+  "type": "dex",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x8bcEaA40B9AcdfAedF85AdF4FF01F5Ad6517937f",
+      "role": "factory",
+      "name": "UniswapV2Factory"
+    },
+    {
+      "address": "0x89e5DB8B5aA49aA85AC63f691524311AEB649eba",
+      "role": "router",
+      "name": "UniswapV2Router02"
+    }
+  ],
+  "website": "https://app.uniswap.org/",
+  "docs": "https://developers.uniswap.org/docs/protocols/v2/deployments",
+  "sources": [
+    "https://developers.uniswap.org/docs/protocols/v2/deployments"
+  ],
+  "notes": "Uniswap's v2 deployments page lists the factory and V2Router02 for Robinhood Chain.",
+  "addedAt": "2026-10-02"
+}

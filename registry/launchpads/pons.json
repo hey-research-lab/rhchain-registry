@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "pons",
+  "name": "Pons",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x7eD598BcEf8bd9Edd8C97A195C6d13f40801EC7e",
+      "role": "launch-factory",
+      "name": "Pons factory",
+      "version": "V2"
+    },
+    {
+      "address": "0x7E1EAbd52Ae29598e6483F72dCf1a70b14284dB8",
+      "role": "launch-factory",
+      "name": "Pons factory",
+      "version": "V2 (earlier)"
+    },
+    {
+      "address": "0xF4fC0CD27fC8EcF17E55eE4c3f7201897dF3eb75",
+      "role": "launch-factory",
+      "name": "Pons factory",
+      "version": "V1"
+    },
+    {
+      "address": "0xA5aAb3F0c6EeadF30Ef1D3Eb997108E976351feB",
+      "role": "launch-factory",
+      "name": "Pons factory",
+      "version": "V1 (repository)"
+    },
+    {
+      "address": "0x0c37a24F5D23A486FA692d1500881d698B1F77a4",
+      "role": "launch-factory",
+      "name": "Pons factory",
+      "version": "V1 (legacy)"
+    }
+  ],
+  "website": "https://ponsfamily.com/",
+  "sources": [
+    "https://github.com/ponsdotdev/ponsfamily",
+    "https://ponsfamily.com/launchpad/create"
+  ],
+  "notes": "The V2 factory and one V1 factory appear in the project's public repository; every address appears in the ponsfamily.com web app's JavaScript, each as a factory configuration.",
+  "addedAt": "2026-10-02"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "long-xyz",
+  "name": "Long.xyz",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x22e99278308B393ea1260859B181AD7E78f5eeED",
+      "role": "launch-factory",
+      "name": "LongLauncher"
+    }
+  ],
+  "website": "https://long.xyz/",
+  "sources": [
+    "https://repo.sourcify.dev/4663/0x22e99278308B393ea1260859B181AD7E78f5eeED",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "Sourcify holds an exact-match verified source for src/LongLauncher.sol:LongLauncher at this address; the name comes from that source. Bitquery's docs list it under Doppler as the launcher most front-ends call. A newer Long.xyz factory proxy is not listed yet: no public source names it.",
+  "addedAt": "2026-10-02"
+}

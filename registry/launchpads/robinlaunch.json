@@ -1,0 +1,105 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "robinlaunch",
+  "name": "Robinlaunch",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x0889B4Cbbb5A8cA2A722734c147fD5A8d956D863",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V4"
+    },
+    {
+      "address": "0x511CF20f3c794bDf95be18d93a0F1539919Ba8Fa",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V5"
+    },
+    {
+      "address": "0xB6eB41B28bd96461D9a97954920823a8b7042Af0",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V6"
+    },
+    {
+      "address": "0xa4552a787ea97649568adcF82e258b714d8aFFD4",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V7"
+    },
+    {
+      "address": "0x108eB6D67c079bEb1EF328850a88c2BbDB4617ea",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V8"
+    },
+    {
+      "address": "0xaA9DcD9e246B710723eBE8D3ee947Ff04A29C3D1",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V9"
+    },
+    {
+      "address": "0xB28c17B72538741590a3374127f84F79B59bBF30",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V10"
+    },
+    {
+      "address": "0x4FB5057634f3CAE0B400E753852ea12B5d6278e2",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V11"
+    },
+    {
+      "address": "0x700Da3295617Ec0c856CF303f77145298c1D4994",
+      "role": "launch-factory",
+      "name": "bonding factory",
+      "version": "V12"
+    },
+    {
+      "address": "0x52afeBDb95Cda3C221eB415Abb9cEE051E3Ca082",
+      "role": "launch-factory",
+      "name": "direct-pool factory",
+      "version": "V4"
+    },
+    {
+      "address": "0x45E213F086d721Ac8BAacF6875940a278399c994",
+      "role": "launch-factory",
+      "name": "direct-pool factory",
+      "version": "V6"
+    },
+    {
+      "address": "0xFE9868fB08D4AF99f37C83839F87183B6Ea1783a",
+      "role": "launch-factory",
+      "name": "direct-pool factory",
+      "version": "V7"
+    },
+    {
+      "address": "0xB76bd3a49e46399Df323DC06BebCEe2DBd346230",
+      "role": "launch-factory",
+      "name": "direct-pool factory",
+      "version": "V8"
+    },
+    {
+      "address": "0xF3b3E2A751f5891B42B31B0c0044ee90bb2FE079",
+      "role": "launch-factory",
+      "name": "direct-pool factory",
+      "version": "V9"
+    },
+    {
+      "address": "0x9F1A2556015c29d8853A6289Afa840359abaC6fF",
+      "role": "launch-factory",
+      "name": "boost factory"
+    }
+  ],
+  "website": "https://robinlaunch.fun/",
+  "sources": [
+    "https://robinlaunch.fun/"
+  ],
+  "notes": "Every address appears in the robinlaunch.fun page or its JavaScript, which lists the bonding-curve factory versions, the direct-pool factories and the boost factory. Presale factories are not listed.",
+  "addedAt": "2026-10-02"
+}

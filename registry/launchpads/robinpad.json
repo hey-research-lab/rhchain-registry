@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "robinpad",
+  "name": "Robinpad",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0xEb3FeeD2716cF0eEAda05B22e67424794e1f5a80",
+      "role": "launch-factory",
+      "name": "FACTORY"
+    },
+    {
+      "address": "0xAf9f3ce1d34909F59E88c23027f89d5807B0F915",
+      "role": "launch-factory",
+      "name": "LEGACY_FACTORY"
+    },
+    {
+      "address": "0x6Ce85c4b7cE12903E5867652C265bCcce57f935F",
+      "role": "launch-factory",
+      "name": "REFLECTION_FACTORY"
+    },
+    {
+      "address": "0x2110f111d2776eF53366B9eAEf8c5619Fde09EEf",
+      "role": "launch-factory",
+      "name": "LEGACY_REFLECTION_FACTORY"
+    },
+    {
+      "address": "0x2A9D79B28D506B209511792795a182e726975C76",
+      "role": "launch-factory",
+      "name": "REFLECTION_PAIR_FACTORY"
+    },
+    {
+      "address": "0xD7601cEe401306fdea5833c6898181D9c770F800",
+      "role": "launch-factory",
+      "name": "INSTANT_FACTORY"
+    },
+    {
+      "address": "0x346c46CF7D8DfeD2c614c38570C697ac948FeEEc",
+      "role": "launch-factory",
+      "name": "INSTANT_GOLD_FACTORY"
+    },
+    {
+      "address": "0x6BfAB86122842EB6e8602124DceBf6A373498ffC",
+      "role": "launch-factory",
+      "name": "INSTANT_ROBIN_FACTORY"
+    }
+  ],
+  "website": "https://www.robinpad.app/",
+  "docs": "https://www.robinpad.app/docs",
+  "sources": [
+    "https://www.robinpad.app/"
+  ],
+  "notes": "Every address ships in the robinpad.app web app JavaScript under the factory name given here.",
+  "addedAt": "2026-10-02"
+}

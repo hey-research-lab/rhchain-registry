@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "flaunch",
+  "name": "Flaunch",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x5Cf8e499C7c466C7E2cf127BDF129F57151E65Dc",
+      "role": "launch-factory",
+      "name": "FlaunchPositionManager"
+    }
+  ],
+  "docs": "https://github.com/flayerlabs/flaunch-sdk",
+  "sources": [
+    "https://github.com/flayerlabs/flaunch-sdk/blob/master/src/addresses.ts"
+  ],
+  "notes": "Flaunch's SDK lists this address as the FlaunchPositionManager on Robinhood Chain (the same address it lists for other chains).",
+  "addedAt": "2026-10-02"
+}

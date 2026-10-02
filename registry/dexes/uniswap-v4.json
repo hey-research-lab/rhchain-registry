@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "uniswap-v4",
+  "name": "Uniswap v4",
+  "type": "dex",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+      "role": "pool-manager",
+      "name": "PoolManager"
+    },
+    {
+      "address": "0x58daec3116aae6D93017bAAea7749052E8a04fA7",
+      "role": "position-manager",
+      "name": "PositionManager"
+    },
+    {
+      "address": "0x9639443158E8C5efa35Bd45287bf2EFfd3D8dC06",
+      "role": "position-descriptor",
+      "name": "PositionDescriptor"
+    },
+    {
+      "address": "0x8Dc178eFB8111BB0973Dd9d722ebeFF267c98F94",
+      "role": "quoter",
+      "name": "V4Quoter"
+    },
+    {
+      "address": "0xF3334192D15450CdD385c8B70e03f9A6bD9E673b",
+      "role": "lens",
+      "name": "StateView"
+    },
+    {
+      "address": "0x0000001b173C3bbF3984D417d8614E3eed34865B",
+      "role": "lens",
+      "name": "ReservesLens"
+    }
+  ],
+  "website": "https://app.uniswap.org/",
+  "docs": "https://developers.uniswap.org/docs/protocols/v4/deployments",
+  "sources": [
+    "https://developers.uniswap.org/docs/protocols/v4/deployments"
+  ],
+  "notes": "Addresses from the Robinhood Chain (4663) section of Uniswap's v4 deployments page. v4 has no pool factory: every pool is initialised on the singleton PoolManager.",
+  "addedAt": "2026-10-02"
+}

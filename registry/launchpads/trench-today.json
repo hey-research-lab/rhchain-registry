@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "trench-today",
+  "name": "trench.today",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x77dC6f6361b7b99456FC3761ce5b7ddA80d83f9d",
+      "role": "launch-factory",
+      "name": "trench.today launcher"
+    }
+  ],
+  "sources": [
+    "https://docs.bitquery.io/docs/blockchain/robinhood/trench-today-api/"
+  ],
+  "notes": "Bitquery's trench.today API docs for Robinhood Chain name this address.",
+  "addedAt": "2026-10-02"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "flap",
+  "name": "Flap",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x26605f322f7fF986f381bB9A6e3f5DAb0bEaEb09",
+      "role": "launch-factory",
+      "name": "Flap launcher"
+    }
+  ],
+  "website": "https://flap.sh/",
+  "sources": [
+    "https://flap.sh/",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "The launcher ships in the flap.sh web app JavaScript, and Bitquery's Robinhood Chain launch docs name it for Flap.sh.",
+  "addedAt": "2026-10-02"
+}

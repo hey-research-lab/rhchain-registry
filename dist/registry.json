@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 1,
+  "chain": {
+    "name": "Robinhood Chain",
+    "chainId": 4663,
+    "caip2": "eip155:4663"
+  },
+  "entryCount": 24,
+  "contractCount": 68,
+  "entries": [
+    {
+      "id": "uniswap-liquidity-launcher",
+      "name": "Uniswap Liquidity Launchpad",
+      "type": "factory",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x0000ffffbe8efe702c8703ae3477ff5de3d319c0",
+          "role": "launch-factory",
+          "name": "LiquidityLauncher",
+          "version": "v3.2.0"
+        },
+        {
+          "address": "0x000000001f26a0044baa66024e7b6599c61963f8",
+          "role": "auction-factory",
+          "name": "ContinuousClearingAuctionFactory",
+          "version": "v2.1.0"
+        },
+        {
+          "address": "0x00cca200bf124dbfa848937c553864f4b4ce0632",
+          "role": "auction-factory",
+          "name": "ContinuousClearingAuctionFactory",
+          "version": "v2.0.0"
+        },
+        {
+          "address": "0xbf1ab81f7d534b2cc0da76fcf4d541322bb0e000",
+          "role": "strategy",
+          "name": "LBPStrategy",
+          "version": "v3.3.0"
+        },
+        {
+          "address": "0x7c48dde3b447381f4d986334679b3afc7f2d35c2",
+          "role": "strategy",
+          "name": "InstantLaunchStrategy (creator fees)",
+          "version": "v3.3.0"
+        },
+        {
+          "address": "0xc9566675b1ea42861546f3c5b74ace2c79c49572",
+          "role": "strategy",
+          "name": "InstantLaunchStrategy (no creator fees)",
+          "version": "v3.3.0"
+        },
+        {
+          "address": "0x0a122717bc36e3c7a7958128a5c789e0b070b3ae",
+          "role": "strategy",
+          "name": "UniversalRouterStrategy",
+          "version": "v3.3.0"
+        }
+      ],
+      "website": "https://pools.trade/",
+      "docs": "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments",
+      "sources": [
+        "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments",
+        "https://pools.trade/"
+      ],
+      "notes": "Current Robinhood Chain deployments from Uniswap's Liquidity Launchpad page; the LiquidityLauncher and auction factory share one address across the chains the page names. The pools.trade web app launches through this LiquidityLauncher (the address ships in its JavaScript). Other front-ends can call it too, so a launch through it does not name the app that started it. Older launcher versions are omitted: the page now lists only v3.2.0.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "uniswap-v2",
+      "name": "Uniswap v2",
+      "type": "dex",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x8bceaa40b9acdfaedf85adf4ff01f5ad6517937f",
+          "role": "factory",
+          "name": "UniswapV2Factory"
+        },
+        {
+          "address": "0x89e5db8b5aa49aa85ac63f691524311aeb649eba",
+          "role": "router",
+          "name": "UniswapV2Router02"
+        }
+      ],
+      "website": "https://app.uniswap.org/",
+      "docs": "https://developers.uniswap.org/docs/protocols/v2/deployments",
+      "sources": [
+        "https://developers.uniswap.org/docs/protocols/v2/deployments"
+      ],
+      "notes": "Uniswap's v2 deployments page lists the factory and V2Router02 for Robinhood Chain.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "uniswap-v3",
+      "name": "Uniswap v3",
+      "type": "dex",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x1f7d7550b1b028f7571e69a784071f0205fd2efa",
+          "role": "factory",
+          "name": "UniswapV3Factory"
+        },
+        {
+          "address": "0x73991a25c818bf1f1128deaab1492d45638de0d3",
+          "role": "position-manager",
+          "name": "NonfungiblePositionManager"
+        },
+        {
+          "address": "0x6f84dae9c064ff453e5c8af51efb819f8f610225",
+          "role": "position-descriptor",
+          "name": "NonfungibleTokenPositionDescriptor"
+        },
+        {
+          "address": "0x2e9d45bb7b30549f5216813ada9a6b7982c5b3ed",
+          "role": "library",
+          "name": "NFTDescriptor"
+        },
+        {
+          "address": "0xcaf681a66d020601342297493863e78c959e5cb2",
+          "role": "router",
+          "name": "SwapRouter02"
+        },
+        {
+          "address": "0x33e885ed0ec9bf04ecfb19341582aadcb4c8a9e7",
+          "role": "quoter",
+          "name": "QuoterV2"
+        },
+        {
+          "address": "0x7dfd4f31be6814d2906bde155c3e1b146eac1468",
+          "role": "lens",
+          "name": "TickLens"
+        },
+        {
+          "address": "0x282a3c4d320cc7f0d5eaf56b8029e4b88338f0a3",
+          "role": "multicall",
+          "name": "UniswapInterfaceMulticall"
+        }
+      ],
+      "website": "https://app.uniswap.org/",
+      "docs": "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments",
+      "sources": [
+        "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments"
+      ],
+      "notes": "Addresses from Uniswap's Robinhood Chain v3 deployments page (v3-core 1.0.0, v3-periphery 1.0.0, swap-router-contracts 1.1.0). Universal Router and Permit2, listed on the same page, have entries of their own.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "uniswap-v4",
+      "name": "Uniswap v4",
+      "type": "dex",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+          "role": "pool-manager",
+          "name": "PoolManager"
+        },
+        {
+          "address": "0x58daec3116aae6d93017baaea7749052e8a04fa7",
+          "role": "position-manager",
+          "name": "PositionManager"
+        },
+        {
+          "address": "0x9639443158e8c5efa35bd45287bf2effd3d8dc06",
+          "role": "position-descriptor",
+          "name": "PositionDescriptor"
+        },
+        {
+          "address": "0x8dc178efb8111bb0973dd9d722ebeff267c98f94",
+          "role": "quoter",
+          "name": "V4Quoter"
+        },
+        {
+          "address": "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b",
+          "role": "lens",
+          "name": "StateView"
+        },
+        {
+          "address": "0x0000001b173c3bbf3984d417d8614e3eed34865b",
+          "role": "lens",
+          "name": "ReservesLens"
+        }
+      ],
+      "website": "https://app.uniswap.org/",
+      "docs": "https://developers.uniswap.org/docs/protocols/v4/deployments",
+      "sources": [
+        "https://developers.uniswap.org/docs/protocols/v4/deployments"
+      ],
+      "notes": "Addresses from the Robinhood Chain (4663) section of Uniswap's v4 deployments page. v4 has no pool factory: every pool is initialised on the singleton PoolManager.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "ape-store",
+      "name": "ape.store",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x6e4910ea5a04376032f6564da9a9e4e88b7a87c1",
+          "role": "launch-factory",
+          "name": "ape.store launcher"
+        }
+      ],
+      "website": "https://ape.store/",
+      "sources": [
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "Bitquery's Robinhood Chain launch docs name this address for Ape.store.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "bags",
+      "name": "Bags",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0xe8cc4431adf8b5a847c113ef0c6af9043219cb37",
+          "role": "launch-factory",
+          "name": "BagsFactory"
+        }
+      ],
+      "website": "https://bags.fm/",
+      "docs": "https://docs.bags.fm/robinhood/overview",
+      "sources": [
+        "https://docs.bags.fm/robinhood/overview",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "Bags' Robinhood Chain docs list this address as BagsFactory.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "clanker",
+      "name": "Clanker",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0xd3f2cc1731b7fd17f28798835c2e02f0a1839a94",
+          "role": "launch-factory",
+          "name": "Clanker factory",
+          "version": "v4"
+        }
+      ],
+      "website": "https://www.clanker.world/",
+      "sources": [
+        "https://www.clanker.world/",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "The factory ships in the clanker.world web app JavaScript, and Bitquery's Robinhood Chain launch docs name it for Clanker.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "flap",
+      "name": "Flap",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09",
+          "role": "launch-factory",
+          "name": "Flap launcher"
+        }
+      ],
+      "website": "https://flap.sh/",
+      "sources": [
+        "https://flap.sh/",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "The launcher ships in the flap.sh web app JavaScript, and Bitquery's Robinhood Chain launch docs name it for Flap.sh.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "flaunch",
+      "name": "Flaunch",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x5cf8e499c7c466c7e2cf127bdf129f57151e65dc",
+          "role": "launch-factory",
+          "name": "FlaunchPositionManager"
+        }
+      ],
+      "docs": "https://github.com/flayerlabs/flaunch-sdk",
+      "sources": [
+        "https://github.com/flayerlabs/flaunch-sdk/blob/master/src/addresses.ts"
+      ],
+      "notes": "Flaunch's SDK lists this address as the FlaunchPositionManager on Robinhood Chain (the same address it lists for other chains).",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "hood-fun",
+      "name": "hood.fun",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x5fcc1df0dc020cf454e742e9a8ae2554c37a452c",
+          "role": "launch-factory",
+          "name": "hood.fun launchpad"
+        },
+        {
+          "address": "0x6a63d96ef77ae569fcb85934cf1bd1ec7fe9b33d",
+          "role": "launch-factory",
+          "name": "hood.fun launchpad",
+          "version": "previous"
+        }
+      ],
+      "website": "https://hood.fun/",
+      "sources": [
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/",
+        "https://hood.fun/api/board"
+      ],
+      "notes": "Bitquery's Robinhood Chain launch docs name the first address as hood.fun's current launch contract and the second as the previous generation; hood.fun's public board API names both as the launchpad of tokens it lists.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "klik",
+      "name": "Klik",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x16cf6788b762ee8969744586ed16fc5705140dd7",
+          "role": "launch-factory",
+          "name": "Klik launcher"
+        }
+      ],
+      "website": "https://klik.finance/",
+      "sources": [
+        "https://klik.finance/",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "The klik.finance web app JavaScript lists this launcher for chain 4663, and Bitquery's Robinhood Chain launch docs name it for Klik Finance.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "launchhood",
+      "name": "LaunchHood",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x62b33a039d289cbda50ebeb72fe4261449e61bcf",
+          "role": "launch-factory",
+          "name": "LaunchHoodV3Factory",
+          "version": "v3"
+        }
+      ],
+      "website": "https://launchhood.com/",
+      "sources": [
+        "https://launchhood.com/",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "The launchhood.com web app JavaScript names this address LaunchHoodV3Factory, and Bitquery's Robinhood Chain launch docs name it for LaunchHood.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "letscash",
+      "name": "letscash.fun",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x5bd1fbe78a78fe8236fa00cf48fbeba74ae34661",
+          "role": "launch-factory",
+          "name": "LAUNCHPAD_FACTORY"
+        }
+      ],
+      "website": "https://letscash.fun/",
+      "sources": [
+        "https://letscash.fun/"
+      ],
+      "notes": "The letscash.fun web app JavaScript names this address as its launchpad factory.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "long-xyz",
+      "name": "Long.xyz",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x22e99278308b393ea1260859b181ad7e78f5eeed",
+          "role": "launch-factory",
+          "name": "LongLauncher"
+        }
+      ],
+      "website": "https://long.xyz/",
+      "sources": [
+        "https://repo.sourcify.dev/4663/0x22e99278308B393ea1260859B181AD7E78f5eeED",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "Sourcify holds an exact-match verified source for src/LongLauncher.sol:LongLauncher at this address; the name comes from that source. Bitquery's docs list it under Doppler as the launcher most front-ends call. A newer Long.xyz factory proxy is not listed yet: no public source names it.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "pair-fund",
+      "name": "PAIR",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x8660a7f019c7943b0b0a91b8e39aff3b6db6ae62",
+          "role": "launch-factory",
+          "name": "PAIR launcher"
+        }
+      ],
+      "website": "https://pair.fund/",
+      "sources": [
+        "https://pair.fund/"
+      ],
+      "notes": "The launcher address ships in the pair.fund web app JavaScript.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "pons",
+      "name": "Pons",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+          "role": "launch-factory",
+          "name": "Pons factory",
+          "version": "V2"
+        },
+        {
+          "address": "0x7e1eabd52ae29598e6483f72dcf1a70b14284db8",
+          "role": "launch-factory",
+          "name": "Pons factory",
+          "version": "V2 (earlier)"
+        },
+        {
+          "address": "0xf4fc0cd27fc8ecf17e55ee4c3f7201897df3eb75",
+          "role": "launch-factory",
+          "name": "Pons factory",
+          "version": "V1"
+        },
+        {
+          "address": "0xa5aab3f0c6eeadf30ef1d3eb997108e976351feb",
+          "role": "launch-factory",
+          "name": "Pons factory",
+          "version": "V1 (repository)"
+        },
+        {
+          "address": "0x0c37a24f5d23a486fa692d1500881d698b1f77a4",
+          "role": "launch-factory",
+          "name": "Pons factory",
+          "version": "V1 (legacy)"
+        }
+      ],
+      "website": "https://ponsfamily.com/",
+      "sources": [
+        "https://github.com/ponsdotdev/ponsfamily",
+        "https://ponsfamily.com/launchpad/create"
+      ],
+      "notes": "The V2 factory and one V1 factory appear in the project's public repository; every address appears in the ponsfamily.com web app's JavaScript, each as a factory configuration.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "robinlaunch",
+      "name": "Robinlaunch",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x0889b4cbbb5a8ca2a722734c147fd5a8d956d863",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V4"
+        },
+        {
+          "address": "0x511cf20f3c794bdf95be18d93a0f1539919ba8fa",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V5"
+        },
+        {
+          "address": "0xb6eb41b28bd96461d9a97954920823a8b7042af0",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V6"
+        },
+        {
+          "address": "0xa4552a787ea97649568adcf82e258b714d8affd4",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V7"
+        },
+        {
+          "address": "0x108eb6d67c079beb1ef328850a88c2bbdb4617ea",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V8"
+        },
+        {
+          "address": "0xaa9dcd9e246b710723ebe8d3ee947ff04a29c3d1",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V9"
+        },
+        {
+          "address": "0xb28c17b72538741590a3374127f84f79b59bbf30",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V10"
+        },
+        {
+          "address": "0x4fb5057634f3cae0b400e753852ea12b5d6278e2",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V11"
+        },
+        {
+          "address": "0x700da3295617ec0c856cf303f77145298c1d4994",
+          "role": "launch-factory",
+          "name": "bonding factory",
+          "version": "V12"
+        },
+        {
+          "address": "0x52afebdb95cda3c221eb415abb9cee051e3ca082",
+          "role": "launch-factory",
+          "name": "direct-pool factory",
+          "version": "V4"
+        },
+        {
+          "address": "0x45e213f086d721ac8baacf6875940a278399c994",
+          "role": "launch-factory",
+          "name": "direct-pool factory",
+          "version": "V6"
+        },
+        {
+          "address": "0xfe9868fb08d4af99f37c83839f87183b6ea1783a",
+          "role": "launch-factory",
+          "name": "direct-pool factory",
+          "version": "V7"
+        },
+        {
+          "address": "0xb76bd3a49e46399df323dc06bebcee2dbd346230",
+          "role": "launch-factory",
+          "name": "direct-pool factory",
+          "version": "V8"
+        },
+        {
+          "address": "0xf3b3e2a751f5891b42b31b0c0044ee90bb2fe079",
+          "role": "launch-factory",
+          "name": "direct-pool factory",
+          "version": "V9"
+        },
+        {
+          "address": "0x9f1a2556015c29d8853a6289afa840359abac6ff",
+          "role": "launch-factory",
+          "name": "boost factory"
+        }
+      ],
+      "website": "https://robinlaunch.fun/",
+      "sources": [
+        "https://robinlaunch.fun/"
+      ],
+      "notes": "Every address appears in the robinlaunch.fun page or its JavaScript, which lists the bonding-curve factory versions, the direct-pool factories and the boost factory. Presale factories are not listed.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "robinpad",
+      "name": "Robinpad",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0xeb3feed2716cf0eeada05b22e67424794e1f5a80",
+          "role": "launch-factory",
+          "name": "FACTORY"
+        },
+        {
+          "address": "0xaf9f3ce1d34909f59e88c23027f89d5807b0f915",
+          "role": "launch-factory",
+          "name": "LEGACY_FACTORY"
+        },
+        {
+          "address": "0x6ce85c4b7ce12903e5867652c265bccce57f935f",
+          "role": "launch-factory",
+          "name": "REFLECTION_FACTORY"
+        },
+        {
+          "address": "0x2110f111d2776ef53366b9eaef8c5619fde09eef",
+          "role": "launch-factory",
+          "name": "LEGACY_REFLECTION_FACTORY"
+        },
+        {
+          "address": "0x2a9d79b28d506b209511792795a182e726975c76",
+          "role": "launch-factory",
+          "name": "REFLECTION_PAIR_FACTORY"
+        },
+        {
+          "address": "0xd7601cee401306fdea5833c6898181d9c770f800",
+          "role": "launch-factory",
+          "name": "INSTANT_FACTORY"
+        },
+        {
+          "address": "0x346c46cf7d8dfed2c614c38570c697ac948feeec",
+          "role": "launch-factory",
+          "name": "INSTANT_GOLD_FACTORY"
+        },
+        {
+          "address": "0x6bfab86122842eb6e8602124dcebf6a373498ffc",
+          "role": "launch-factory",
+          "name": "INSTANT_ROBIN_FACTORY"
+        }
+      ],
+      "website": "https://www.robinpad.app/",
+      "docs": "https://www.robinpad.app/docs",
+      "sources": [
+        "https://www.robinpad.app/"
+      ],
+      "notes": "Every address ships in the robinpad.app web app JavaScript under the factory name given here.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "trench-today",
+      "name": "trench.today",
+      "type": "launchpad",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d",
+          "role": "launch-factory",
+          "name": "trench.today launcher"
+        }
+      ],
+      "sources": [
+        "https://docs.bitquery.io/docs/blockchain/robinhood/trench-today-api/"
+      ],
+      "notes": "Bitquery's trench.today API docs for Robinhood Chain name this address.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "robinhood-chain-blockscout",
+      "name": "Robinhood Chain explorer (Blockscout)",
+      "type": "explorer",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [],
+      "website": "https://robinhoodchain.blockscout.com/",
+      "docs": "https://docs.robinhood.com/chain/connecting/",
+      "sources": [
+        "https://docs.robinhood.com/chain/connecting/"
+      ],
+      "notes": "The block explorer Robinhood's chain documentation lists for mainnet (chain id 4663).",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "doppler",
+      "name": "Doppler",
+      "type": "protocol",
+      "chainId": 4663,
+      "status": "unknown",
+      "contracts": [
+        {
+          "address": "0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862",
+          "role": "launch-factory",
+          "name": "Airlock"
+        }
+      ],
+      "docs": "https://docs.doppler.lol/",
+      "sources": [
+        "https://docs.doppler.lol/reference/contract-addresses",
+        "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+      ],
+      "notes": "Doppler's contract-addresses page lists the Airlock with a Robinhood Chain explorer link. Doppler is a token-launch protocol that several front-ends call; a token created through the Airlock does not say which front-end launched it.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "permit2",
+      "name": "Permit2",
+      "type": "protocol",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+          "role": "permit",
+          "name": "Permit2"
+        }
+      ],
+      "docs": "https://github.com/Uniswap/permit2",
+      "sources": [
+        "https://developers.uniswap.org/docs/protocols/v4/deployments",
+        "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments"
+      ],
+      "notes": "Uniswap's token-approval contract, at its canonical address. Listed for Robinhood Chain on Uniswap's v3 and v4 deployments pages.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "uniswap-universal-router",
+      "name": "Uniswap Universal Router",
+      "type": "protocol",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x8876789976decbfcbbbe364623c63652db8c0904",
+          "role": "router",
+          "name": "UniversalRouter"
+        },
+        {
+          "address": "0x204faca1764b154221e35c0d20abb3c525710498",
+          "role": "router",
+          "name": "UniversalRouter",
+          "version": "2.1.2"
+        }
+      ],
+      "website": "https://app.uniswap.org/",
+      "docs": "https://developers.uniswap.org/docs/protocols/v4/deployments",
+      "sources": [
+        "https://developers.uniswap.org/docs/protocols/v4/deployments",
+        "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-robinhood-chain-deployments"
+      ],
+      "notes": "Both addresses appear in the Robinhood Chain section of Uniswap's v4 deployments page; the first also appears on the v3 page.",
+      "addedAt": "2026-10-02"
+    },
+    {
+      "id": "robinhood-chain-public-rpc",
+      "name": "Robinhood Chain public RPC",
+      "type": "infrastructure",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [],
+      "docs": "https://docs.robinhood.com/chain/connecting/",
+      "sources": [
+        "https://docs.robinhood.com/chain/connecting/"
+      ],
+      "notes": "Mainnet JSON-RPC endpoint https://rpc.mainnet.chain.robinhood.com, as Robinhood's chain documentation lists it. The documentation describes the public endpoints as rate-limited and not recommended for production use.",
+      "addedAt": "2026-10-02"
+    }
+  ]
+}

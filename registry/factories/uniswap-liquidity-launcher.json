@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "uniswap-liquidity-launcher",
+  "name": "Uniswap Liquidity Launchpad",
+  "type": "factory",
+  "chainId": 4663,
+  "status": "active",
+  "contracts": [
+    {
+      "address": "0x0000FffFBE8efE702c8703aE3477FF5dE3d319C0",
+      "role": "launch-factory",
+      "name": "LiquidityLauncher",
+      "version": "v3.2.0"
+    },
+    {
+      "address": "0x000000001F26a0044BaA66024e7b6599c61963F8",
+      "role": "auction-factory",
+      "name": "ContinuousClearingAuctionFactory",
+      "version": "v2.1.0"
+    },
+    {
+      "address": "0x00cCa200BF124dBfA848937c553864f4B4CE0632",
+      "role": "auction-factory",
+      "name": "ContinuousClearingAuctionFactory",
+      "version": "v2.0.0"
+    },
+    {
+      "address": "0xbf1aB81f7d534b2CC0Da76fcf4d541322bB0e000",
+      "role": "strategy",
+      "name": "LBPStrategy",
+      "version": "v3.3.0"
+    },
+    {
+      "address": "0x7c48DDe3B447381F4d986334679b3Afc7F2D35C2",
+      "role": "strategy",
+      "name": "InstantLaunchStrategy (creator fees)",
+      "version": "v3.3.0"
+    },
+    {
+      "address": "0xC9566675b1Ea42861546f3c5B74Ace2c79c49572",
+      "role": "strategy",
+      "name": "InstantLaunchStrategy (no creator fees)",
+      "version": "v3.3.0"
+    },
+    {
+      "address": "0x0A122717bc36E3C7A7958128a5C789E0b070b3Ae",
+      "role": "strategy",
+      "name": "UniversalRouterStrategy",
+      "version": "v3.3.0"
+    }
+  ],
+  "website": "https://pools.trade/",
+  "docs": "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments",
+  "sources": [
+    "https://developers.uniswap.org/docs/liquidity/liquidity-launchpad/deployments",
+    "https://pools.trade/"
+  ],
+  "notes": "Current Robinhood Chain deployments from Uniswap's Liquidity Launchpad page; the LiquidityLauncher and auction factory share one address across the chains the page names. The pools.trade web app launches through this LiquidityLauncher (the address ships in its JavaScript). Other front-ends can call it too, so a launch through it does not name the app that started it. Older launcher versions are omitted: the page now lists only v3.2.0.",
+  "addedAt": "2026-10-02"
+}

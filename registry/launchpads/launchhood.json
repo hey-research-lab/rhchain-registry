@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "launchhood",
+  "name": "LaunchHood",
+  "type": "launchpad",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [
+    {
+      "address": "0x62B33A039D289CBDa50EbeB72Fe4261449E61Bcf",
+      "role": "launch-factory",
+      "name": "LaunchHoodV3Factory",
+      "version": "v3"
+    }
+  ],
+  "website": "https://launchhood.com/",
+  "sources": [
+    "https://launchhood.com/",
+    "https://docs.bitquery.io/docs/blockchain/robinhood/robinhood-meme-coin-launches/"
+  ],
+  "notes": "The launchhood.com web app JavaScript names this address LaunchHoodV3Factory, and Bitquery's Robinhood Chain launch docs name it for LaunchHood.",
+  "addedAt": "2026-10-02"
+}
