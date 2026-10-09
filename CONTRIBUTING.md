@@ -64,8 +64,8 @@ co-author trailers.
   ecosystem conventions shared by the other `hey-research-lab` repositories (`src/chain.ts` and
   `src/evm.ts` are kept identical across them). The first launchpad entries were seeded from the
   public launch-factory list in `hey-research-lab/hey-research-open`
-  (`packages/sources/src/factories`), extracted from HEY Research Lab's production contract at
-  `21775391f6c0fb4494575e0b4463df535c65cb96`, and each was re-checked against a public page on
+  (`packages/sources/src/factories`), extracted from HEY Research Lab's production contract as of
+  2026-10-02, and each was re-checked against a public page on
   2026-10-02. HEY's indexing details (start blocks, event topics) are deliberately not copied.
   Re-checked against production as of 2026-10-09: the factory list is unchanged (only how HEY
   reads the chain changed), every address left out is still the one the README names, and every
