@@ -67,6 +67,9 @@ co-author trailers.
   (`packages/sources/src/factories`), extracted from HEY Research Lab's production contract at
   `21775391f6c0fb4494575e0b4463df535c65cb96`, and each was re-checked against a public page on
   2026-10-02. HEY's indexing details (start blocks, event topics) are deliberately not copied.
+  Re-checked against production as of 2026-10-09: the factory list is unchanged (only how HEY
+  reads the chain changed), every address left out is still the one the README names, and every
+  entry's sources still answer.
 - **Releases.** `pnpm build` then `npm pack` produces the package; publishing to npm is done by
   hand by the organisation owners.
 - **Data licence.** Code and data are MIT today; switching the data to CC0 or CC BY is a decision
