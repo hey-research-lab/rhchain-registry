@@ -10,14 +10,14 @@ import { TODAY, baseEntry } from './helpers.js';
 
 const repo = join(import.meta.dirname, '..');
 
-const cli = async (args: string[], cwd = repo) => {
+const cli = async (args: string[], cwd = repo, today = TODAY) => {
   let stdout = '';
   let stderr = '';
   const code = await run(args, {
     stdout: (text) => (stdout += text),
     stderr: (text) => (stderr += text),
     cwd,
-    today: TODAY,
+    today,
   });
   return { code, stdout, stderr };
 };
@@ -76,7 +76,9 @@ describe('rhchain-registry CLI', () => {
   });
 
   it('validate passes on the committed registry and fails on a bad tree', async () => {
-    expect((await cli(['validate', '--quiet'])).code).toBe(0);
+    expect(
+      (await cli(['validate', '--quiet'], repo, new Date().toISOString().slice(0, 10))).code,
+    ).toBe(0);
     mkdirSync(join(scratch, 'launchpads'), { recursive: true });
     writeFileSync(
       join(scratch, 'launchpads/example-launchpad.json'),
