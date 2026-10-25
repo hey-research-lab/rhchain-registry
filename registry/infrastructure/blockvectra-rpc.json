@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/registry-entry.v1.json",
+  "id": "blockvectra-rpc",
+  "name": "BlockVectra Robinhood Chain RPC",
+  "type": "infrastructure",
+  "chainId": 4663,
+  "status": "unknown",
+  "contracts": [],
+  "website": "https://blockvectra.com/",
+  "docs": "https://github.com/blockvectra/agent-quickstart",
+  "sources": [
+    "https://github.com/blockvectra/agent-quickstart/blob/cac7799148e0882f48d474c5896f1fdf73de3d63/README.md"
+  ],
+  "notes": "The public TypeScript example selects robinhood_mainnet from the BlockVectra chain directory, requires chain ID 4663, and reads the latest block number. Its read:public command uses no wallet, account sign-up or API key. The example stops if the directory does not advertise the public endpoint or required methods. This source documents an RPC access path, not current endpoint availability.",
+  "addedAt": "2026-10-25"
+}
