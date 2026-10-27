@@ -5,7 +5,7 @@
     "chainId": 4663,
     "caip2": "eip155:4663"
   },
-  "entryCount": 25,
+  "entryCount": 26,
   "contractCount": 68,
   "entries": [
     {
@@ -755,6 +755,25 @@
       ],
       "notes": "The public TypeScript example selects robinhood_mainnet from the BlockVectra chain directory, requires chain ID 4663, and reads the latest block number. Its read:public command uses no wallet, account sign-up or API key. The example stops if the directory does not advertise the public endpoint or required methods. This source documents an RPC access path, not current endpoint availability.",
       "addedAt": "2026-10-25"
+    },
+    {
+      "id": "firstlight-sequencer-feed",
+      "name": "FirstLight Robinhood Chain sequencer feed",
+      "type": "infrastructure",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [],
+      "website": "https://first-light.stream/",
+      "docs": "https://first-light.stream/docs",
+      "sources": [
+        "https://first-light.stream/docs",
+        "https://first-light.stream/docs/feed",
+        "https://first-light.stream/docs/headers",
+        "https://first-light.stream/docs/transactions",
+        "https://first-light.stream/docs/submit"
+      ],
+      "notes": "FirstLight's documentation index lists four keyed endpoints: the Robinhood Chain sequencer feed, served as a standard Arbitrum Nitro feed at wss://blocks.first-light.stream/{KEY}, which the feed page says a Nitro node reads with --node.feed.input.url; a block headers stream at wss://headers.first-light.stream/{KEY}, which the headers page places in the Free plan; a raw signed transactions stream at wss://tx.first-light.stream/{KEY}; and transaction submission by eth_sendRawTransaction at https://submit.first-light.stream/{KEY}, which the submit page says answers eth_chainId with chain ID 4663. Every endpoint takes a key as its path, and the documentation says FirstLight issues keys on request.",
+      "addedAt": "2026-10-27"
     },
     {
       "id": "robinhood-chain-public-rpc",
