@@ -174,7 +174,8 @@ are stale.
 
 ## What is in it today
 
-24 entries, 68 contract addresses, all added on 2026-10-02:
+25 entries, 68 contract addresses: 24 added on 2026-10-02, one on 2026-10-25 (the npm release 0.1.1
+carries the first 24):
 
 | Type           | Entries                                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -183,7 +184,7 @@ are stale.
 | protocol       | `uniswap-universal-router`, `permit2`, `doppler`                                                                                                                            |
 | launchpad      | `ape-store`, `bags`, `clanker`, `flap`, `flaunch`, `hood-fun`, `klik`, `launchhood`, `letscash`, `long-xyz`, `pair-fund`, `pons`, `robinlaunch`, `robinpad`, `trench-today` |
 | explorer       | `robinhood-chain-blockscout` — from Robinhood's chain documentation                                                                                                         |
-| infrastructure | `robinhood-chain-public-rpc` — from Robinhood's chain documentation                                                                                                         |
+| infrastructure | `robinhood-chain-public-rpc` — from Robinhood's chain documentation; `blockvectra-rpc` — from BlockVectra's own quickstart                                                  |
 
 `bridges/`, `oracles/` and `lockers/` are empty: nothing with a public source has been
 submitted yet.
