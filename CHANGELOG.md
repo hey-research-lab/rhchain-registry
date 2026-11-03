@@ -4,8 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## Unreleased
+## 0.2.0 — unreleased (not yet on npm)
 
+- Security: `zod` moves from `^3.24.1` to `^4.6.7` (GHSA-mrhx-c7xc-m3w5, memory exhaustion on large arrays, fixed only in 4.6.6). The exported schemas are now zod 4 schemas, hence the minor bump. Validation results and issue codes are unchanged; zod's own fallback messages in `schema_violation` issues read differently.
+- Data: the published registry carries the BlockVectra RPC entry added on 2026-10-25 (npm 0.1.1 has 24 entries, this release 25).
+- Development: vitest 4.1.12; `fast-uri` held at ^3.1.9 by a pnpm override (dev-only advisory through ajv).
 - Development: vitest 4.1.11 / tsup 8.5.1, with esbuild held at ^0.28.1 by a pnpm override; clears dev-only advisories in the test and build toolchain. No runtime change.
 
 ## 0.1.1 — 2026-10-02

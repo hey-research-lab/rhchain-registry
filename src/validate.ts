@@ -62,7 +62,8 @@ function mapZodIssue(
   zodIssue: ZodIssue,
   raw: Record<string, unknown>,
 ): RegistryIssue[] {
-  const { path } = zodIssue;
+  // zod 4 types a path segment as PropertyKey; HEY's schemas never key by symbol.
+  const path = zodIssue.path.map((part) => (typeof part === 'symbol' ? String(part) : part));
   const pointer = toPointer(path);
   const last = path[path.length - 1];
   if (zodIssue.code === 'unrecognized_keys') {
