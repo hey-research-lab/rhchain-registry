@@ -5,9 +5,9 @@ DEXes, launchpads, bridges, oracles, explorers, lockers, protocols — where eve
 public sources it rests on.
 
 [![CI](https://github.com/hey-research-lab/rhchain-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/hey-research-lab/rhchain-registry/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%3E%3D18-informational.svg)](package.json)
-[![Robinhood Chain 4663](https://img.shields.io/badge/Robinhood%20Chain-4663-informational.svg)](https://robinhoodchain.blockscout.com)
+[![License: MIT](assets/badges/license-mit.svg)](LICENSE)
+[![Node](assets/badges/node-18.svg)](package.json)
+[![Robinhood Chain 4663](assets/badges/robinhood-chain-4663.svg)](https://robinhoodchain.blockscout.com)
 
 > **Registry presence ≠ Verified Builder.** A contract listed here does not prove who owns a
 > project, and inclusion is not HEY verification.
