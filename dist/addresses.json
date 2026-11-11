@@ -56,6 +56,12 @@
       "role": "launch-factory",
       "name": "bonding factory"
     },
+    "0x15b9b92f59c0ecffbe4f200e35d13ceef1bcbae4": {
+      "id": "virtuallock",
+      "type": "locker",
+      "role": "locker",
+      "name": "TokenLock"
+    },
     "0x16cf6788b762ee8969744586ed16fc5705140dd7": {
       "id": "klik",
       "type": "launchpad",
@@ -182,6 +188,12 @@
       "role": "launch-factory",
       "name": "hood.fun launchpad"
     },
+    "0x6b885b0b4fc34cbd35ca55d083613087c0bc4295": {
+      "id": "virtuallock",
+      "type": "locker",
+      "role": "other",
+      "name": "VestingVault"
+    },
     "0x6bfab86122842eb6e8602124dcebf6a373498ffc": {
       "id": "robinpad",
       "type": "launchpad",
@@ -259,6 +271,12 @@
       "type": "launchpad",
       "role": "launch-factory",
       "name": "PAIR launcher"
+    },
+    "0x86e2ca2c8b86a48f520433c562db764b7b7ee74f": {
+      "id": "virtuallock",
+      "type": "locker",
+      "role": "other",
+      "name": "AirdropEscrow"
     },
     "0x8876789976decbfcbbbe364623c63652db8c0904": {
       "id": "uniswap-universal-router",
