@@ -5,8 +5,8 @@
     "chainId": 4663,
     "caip2": "eip155:4663"
   },
-  "entryCount": 25,
-  "contractCount": 68,
+  "entryCount": 26,
+  "contractCount": 71,
   "entries": [
     {
       "id": "uniswap-liquidity-launcher",
@@ -670,6 +670,37 @@
       ],
       "notes": "The block explorer Robinhood's chain documentation lists for mainnet (chain id 4663).",
       "addedAt": "2026-10-02"
+    },
+    {
+      "id": "virtuallock",
+      "name": "Virtuallock",
+      "type": "locker",
+      "chainId": 4663,
+      "status": "active",
+      "contracts": [
+        {
+          "address": "0x15b9b92f59c0ecffbe4f200e35d13ceef1bcbae4",
+          "role": "locker",
+          "name": "TokenLock"
+        },
+        {
+          "address": "0x6b885b0b4fc34cbd35ca55d083613087c0bc4295",
+          "role": "other",
+          "name": "VestingVault"
+        },
+        {
+          "address": "0x86e2ca2c8b86a48f520433c562db764b7b7ee74f",
+          "role": "other",
+          "name": "AirdropEscrow"
+        }
+      ],
+      "website": "https://virtuallock.io/",
+      "docs": "https://virtuallock.io/developers",
+      "sources": [
+        "https://virtuallock.io/developers"
+      ],
+      "notes": "Virtuallock's developers page lists TokenLock (time locks), VestingVault (cliff and linear vesting) and AirdropEscrow (airdrops claimed with a proof) on Robinhood Chain, each linked to its Blockscout address page.",
+      "addedAt": "2026-11-11"
     },
     {
       "id": "doppler",
