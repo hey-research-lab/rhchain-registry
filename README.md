@@ -232,6 +232,8 @@ See [SECURITY.md](SECURITY.md). The package reads only the files you point the v
 never fetches any URL (the URLs in entries are data, not something it opens), never runs a
 child process and has two runtime dependencies (`zod`, `@noble/hashes` for EIP-55).
 
+HEY Research Lab also reviews other projects' code and reports what it finds privately first: [security credits](https://github.com/hey-research-lab#security-credits).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Every new entry needs a public source. Before opening a
