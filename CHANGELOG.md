@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+- Data: `virtuallock` (Virtuallock's TokenLock, VestingVault and AirdropEscrow, from its own developers page), added on 2026-11-11: the first locker entry. 26 entries, 71 contract addresses.
+
 ## 0.2.0 — 2026-11-03
 
 - Security: `zod` moves from `^3.24.1` to `^4.6.7` (GHSA-mrhx-c7xc-m3w5, memory exhaustion on large arrays, fixed only in 4.6.6). The exported schemas are now zod 4 schemas, hence the minor bump. Validation results and issue codes are unchanged; zod's own fallback messages in `schema_violation` issues read differently.

@@ -174,8 +174,8 @@ are stale.
 
 ## What is in it today
 
-25 entries, 68 contract addresses: 24 added on 2026-10-02, one on 2026-10-25 (the npm release 0.1.1
-carries the first 24):
+26 entries, 71 contract addresses: 24 added on 2026-10-02, one on 2026-10-25 and one on 2026-11-11 (the npm
+release 0.1.1 carries the first 24, 0.2.0 the first 25):
 
 | Type           | Entries                                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -185,9 +185,9 @@ carries the first 24):
 | launchpad      | `ape-store`, `bags`, `clanker`, `flap`, `flaunch`, `hood-fun`, `klik`, `launchhood`, `letscash`, `long-xyz`, `pair-fund`, `pons`, `robinlaunch`, `robinpad`, `trench-today` |
 | explorer       | `robinhood-chain-blockscout` — from Robinhood's chain documentation                                                                                                         |
 | infrastructure | `robinhood-chain-public-rpc` — from Robinhood's chain documentation; `blockvectra-rpc` — from BlockVectra's own quickstart                                                  |
+| locker         | `virtuallock` — from Virtuallock's own developers page                                                                                                                      |
 
-`bridges/`, `oracles/` and `lockers/` are empty: nothing with a public source has been
-submitted yet.
+`bridges/` and `oracles/` are empty: nothing with a public source has been submitted yet.
 
 The launchpad entries started from the factory list in HEY Research Lab's public source code,
 each re-checked against a public page that names the address. Where the public evidence is a
